@@ -1,0 +1,13 @@
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fixed-center {
+    position: fixed;
+    left: 50vw;
+    top: 50vh;
+    z-index: 2;
+    transform: translateX(-50%) translateY(-50%);
+}

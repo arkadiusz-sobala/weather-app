@@ -1,0 +1,5 @@
+::ng-deep .mat-dialog-container {
+    background-color: #e4e4e4f3;
+    overflow: auto;
+    max-height: 80vh;
+}

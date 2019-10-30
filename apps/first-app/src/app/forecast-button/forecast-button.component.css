@@ -1,0 +1,51 @@
+.flex {
+    display: flex;
+    justify-content: center;
+}
+
+.grid {
+    display: grid;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.small-text {
+    font-weight: 400;
+    font-size: 9px;
+}
+
+.big-bottom-margin {
+    margin-bottom: 50px;
+}
+
+.big-top-margin {
+    margin-top: 50px;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.see-through-card {
+    margin: 3px;
+    opacity: 0.8;
+    background-color: #d8d8d8;
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.clickable {
+    cursor: pointer;
+    transition: all 0.3s;
+    text-decoration: none;
+}
+
+.clickable:hover {
+    transform: translateY(-2px);
+    background-color: #e4e4e4;
+    opacity: 1;
+    text-decoration: underline;
+}

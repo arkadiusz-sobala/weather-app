@@ -1,0 +1,41 @@
+.full-width {
+    width: 100vw
+}
+
+.full-height {
+    height: 100vh
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.color {
+    background-color: #7b7b7b;
+}
+
+.very-little-blur {
+    filter: blur(2px)
+}
+
+.little-blur {
+    filter: blur(5px)
+}
+
+.blur {
+    filter: blur(10px)
+}
+
+.back {
+    position: absolute;
+    z-index: 0;
+}
+
+.fit-image {
+    max-height: 100%;
+    max-width: 100%;
+    box-shadow: 25px 25px 50px 0 white inset, -25px -25px 50px 0 white inset;
+    z-index: 1;
+}

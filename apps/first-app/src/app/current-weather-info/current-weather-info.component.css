@@ -1,0 +1,62 @@
+.flex {
+    display: flex;
+    justify-content: center;
+}
+
+.grid {
+    display: grid;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.thin-text {
+    font-weight: 400;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.huge-text {
+    font-size: 75px;
+}
+
+.bottom {
+    align-items: flex-end;
+}
+
+.top {
+    align-items: flex-start;
+}
+
+.half-screen {
+    width: 50vw;
+    display: flex;
+}
+
+.right {
+    justify-content: flex-end;
+}
+
+.left {
+    justify-content: flex-start;
+}
+
+.see-through-card {
+    margin: 3px;
+    opacity: 0.8;
+    background-color: #d8d8d8;
+    color: black;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.icon-shadow {
+    filter: drop-shadow(2px 2px 8px black);
+    height: 120px;
+}
+
+.description {
+    width: min-content;
+    text-transform: capitalize;
+}

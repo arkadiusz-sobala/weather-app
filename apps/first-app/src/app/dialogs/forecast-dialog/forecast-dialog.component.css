@@ -1,0 +1,61 @@
+.flex {
+    display: flex;
+    justify-content: center;
+}
+
+.table-caption {
+    display: table-caption;
+}
+
+.center {
+    text-align: -webkit-center;
+}
+
+.center-align {
+    text-align: center;
+}
+
+.temperature-text {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.red-text {
+    color: #e60000;
+}
+
+.blue-text {
+    color: #1a76ff;
+}
+
+.margin {
+    margin: 0px 10px;
+}
+
+.icon-shadow {
+    filter: drop-shadow(2px 2px 3px black);
+}
+
+.bold-text {
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+::ng-deep .mat-dialog-container {
+    background-color: #e4e4e4f3;
+    overflow: auto;
+    max-height: 80vh;
+}
+
+.day-container {
+    border-radius: 3px;
+    transition: all 0.2s;
+    margin: 25px 0px;
+}
+
+.day-container:hover {
+    transform: translateY(-2px);
+    background-color: #d4d4d4;
+    box-shadow: 2px 2px 8px #2d2d2d54;
+}

@@ -1,0 +1,28 @@
+<ngx-ui-loader [fgsColor]="loaderConfig.fgsColor"
+  [fgsPosition]="loaderConfig.fgsPosition"
+  [fgsSize]="loaderConfig.fgsSize"
+  [fgsType]="loaderConfig.fgsType"
+  [overlayColor]="loaderConfig.overlayColor"
+  [hasProgressBar]="loaderConfig.hasProgressBar">
+</ngx-ui-loader>
+
+<weather-background-image [imageName]="backgroundImageName"></weather-background-image>
+
+
+<div class="fixed-center">
+  <city-info [currentCity]="currentCity"
+  (cityChange)="getCurrentWeather($event)"
+  (backToCurrentPosition)="getCurrentPositionAndWeather()">
+  </city-info>
+  <current-weather-info *ngIf="currentTemp"
+    #currentWeatherInfoComponent
+    [currentTemp]="currentTemp"
+    [currentWind]="currentWind"
+    [currentDescription]="currentDescription"
+    [currentWeatherIcon]="currentWeatherIcon">
+  </current-weather-info>
+  <forecast-button *ngIf="currentTemp"
+    [label]="chooseCityButtonLabel"
+    [currentCity]="currentCity">
+  </forecast-button>
+</div>

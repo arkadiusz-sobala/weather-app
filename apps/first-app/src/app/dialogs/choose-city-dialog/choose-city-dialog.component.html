@@ -1,0 +1,18 @@
+<h1 mat-dialog-title>Choose location</h1>
+<div mat-dialog-content>
+    <mat-form-field>
+        <input matInput
+            placeholder="choose location"
+            [(ngModel)]="city"
+            required
+            (keyup.enter)="close(city)">
+    </mat-form-field>
+</div>
+<div mat-dialog-actions>
+    <button mat-button
+        (click)="close()">Exit</button>
+    <button mat-button
+        [mat-dialog-close]="city">Accept</button>
+    <button mat-button
+        [mat-dialog-close]="current">Current location</button>
+</div>

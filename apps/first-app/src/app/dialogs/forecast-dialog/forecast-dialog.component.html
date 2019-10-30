@@ -1,0 +1,26 @@
+<div class="center">
+    <div [ngClass]="getClassBasedOnScreenWidth()"
+    *ngIf="sortedData && sortedData.length > 0">
+    <div *ngFor="let record of sortedData"
+        class=" day-container">
+        <div class="center-align">
+            <span class="bold-text">{{record.data.day}}</span>
+            <img class="icon-shadow"
+                [src]="getImageSource(record.data.icon)">
+            <div class="flex">
+                <span class="temperature-text red-text margin">{{record.data.maxTemp[degrees]}}°</span>
+                <span class="temperature-text blue-text margin">{{record.data.minTemp[degrees]}}°</span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="flex">
+    <mat-slide-toggle class="bold-text"
+        color="primary"
+        (change)="changeTemperature()">{{degrees}}
+    </mat-slide-toggle>
+</div>
+</div>
+<button mat-button
+    class="bold-text"
+    (click)="close()">Exit</button>

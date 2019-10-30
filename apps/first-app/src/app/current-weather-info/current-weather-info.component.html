@@ -1,0 +1,30 @@
+<div class="flex bottom">
+    <div class="half-screen right">
+        <mat-card class="see-through-card">
+            <img class="icon-shadow"
+                [src]="getIconPath()">
+        </mat-card>
+    </div>
+    <div class="half-screen left">
+        <mat-card class="see-through-card grid center-text">
+            <span *ngIf="temps" class="huge-text">{{temps[degrees.value]}}{{degrees.value}}</span>
+            <div class="thin-text">
+                <mat-slide-toggle color="primary" (change)="changeTemperature()">{{degrees.label}}</mat-slide-toggle>
+            </div>
+        </mat-card>
+    </div>
+</div>
+<div class="flex top">
+    <div class="half-screen right">
+        <mat-card class="see-through-card grid center-text">
+            <span class="thin-text">Wind</span>
+            <span>{{currentWind}} km/h</span>
+        </mat-card>
+    </div>
+    <div class="half-screen left">
+        <mat-card class="see-through-card description grid center-text">
+            <span class="thin-text">Description</span>
+            <span>{{currentDescription}}</span>
+        </mat-card>
+    </div>
+</div>
